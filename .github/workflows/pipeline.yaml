@@ -64,4 +64,3 @@ jobs:
             -p 8081:80 \
             --name $CONTAINER_NAME \
             ${{ secrets.DOCKERHUB_USERNAME }}/$CONTAINER_NAME:${{ github.ref_name }}
-            ${{ secrets.DOCKERHUB_USERNAME }}/$CONTAINER_NAME:${{ github.ref_name }}
