@@ -52,7 +52,7 @@ jobs:
       - name: Checkout Infra Repo
         uses: actions/checkout@v4
         with:
-          repository: viniciusmorao-dev/infra-repo
+          repository: GestaoProjetos2026/infra-centralizado
           token: ${{ secrets.GH_TOKEN }}
           path: infra
 
@@ -69,7 +69,7 @@ jobs:
 
       - name: Commit and push
         run: |
-          cd infra
+          cd infra-centralizado
 
           git config user.name "viniciusmorao-dev"
           git config user.email "${{ secrets.GH_EMAIL }}"
