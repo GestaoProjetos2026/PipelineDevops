@@ -63,7 +63,7 @@ jobs:
 
       - name: Update deployment image
         run: |
-          cd infra/template-apps/$APP_NAME
+          cd infra-centralizado/$APP_NAME
 
           sed -i "s|image: .*|image: ${{ secrets.DOCKERHUB_USERNAME }}/$APP_NAME:$IMAGE_TAG|" deployment.yaml
 
